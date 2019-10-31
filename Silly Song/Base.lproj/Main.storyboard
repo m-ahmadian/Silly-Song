@@ -40,10 +40,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="cBn-aa-SmS"/>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kg6-dv-m04"/>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="2DJ-lW-piK"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwy-CI-ZsR">
+                                <rect key="frame" x="268" y="176" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" red="0.6871957044" green="0.76148080579999999" blue="0.7118986182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbv-BS-cY0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -55,7 +67,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOQ-Ur-6jM" secondAttribute="trailing" constant="123" id="bwC-gV-i3z"/>
                             <constraint firstItem="GbK-Rw-W04" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g2i-e3-2Zg"/>
                             <constraint firstItem="GbK-Rw-W04" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-135" id="lfN-Vb-CRC"/>
+                            <constraint firstItem="Mwy-CI-ZsR" firstAttribute="top" secondItem="Ojc-H6-y2R" secondAttribute="bottom" constant="69.5" id="nVy-tU-3Xe"/>
                             <constraint firstItem="GbK-Rw-W04" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="reV-Fl-1Zl"/>
+                            <constraint firstItem="Mwy-CI-ZsR" firstAttribute="leading" secondItem="wOQ-Ur-6jM" secondAttribute="trailing" constant="16" id="rq3-1H-tkf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
