@@ -19,63 +19,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate a Silly Song!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojc-H6-y2R">
-                                <rect key="frame" x="79" y="81" width="217" height="25.5"/>
+                                <rect key="frame" x="72" y="81" width="231" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25.5" id="JXb-uL-FrW"/>
+                                    <constraint firstAttribute="height" constant="27" id="aVG-VK-F1v"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                 <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbK-Rw-W04">
-                                <rect key="frame" x="67.5" y="259" width="240" height="149"/>
-                                <color key="backgroundColor" red="0.93453395510000004" green="0.94283391500000002" blue="0.76768687130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wOQ-Ur-6jM">
-                                <rect key="frame" x="122" y="176" width="130" height="30"/>
+                                <rect key="frame" x="61" y="165" width="252" height="31"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                 <connections>
                                     <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kg6-dv-m04"/>
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="2DJ-lW-piK"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwy-CI-ZsR">
-                                <rect key="frame" x="268" y="176" width="30" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Go">
-                                    <color key="titleShadowColor" red="0.6871957044" green="0.76148080579999999" blue="0.7118986182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbv-BS-cY0"/>
-                                </connections>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbK-Rw-W04">
+                                <rect key="frame" x="67" y="253" width="240" height="131"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="G3Q-13-6SL"/>
+                                    <constraint firstAttribute="height" constant="131" id="U23-9a-aXN"/>
+                                </constraints>
+                                <string key="text">Nate, Nate, Bo Bate,
+Banana Fana Fo Fate,
+Me My Mo Mate,
+Nate</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ojc-H6-y2R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3ju-Ym-CGw"/>
-                            <constraint firstItem="GbK-Rw-W04" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-518" id="4MP-Vr-665"/>
-                            <constraint firstItem="Ojc-H6-y2R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="9E2-oq-Xs3"/>
-                            <constraint firstItem="wOQ-Ur-6jM" firstAttribute="top" secondItem="Ojc-H6-y2R" secondAttribute="bottom" constant="69.5" id="B2a-EM-Ia3"/>
-                            <constraint firstItem="wOQ-Ur-6jM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="BxC-xK-kDa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOQ-Ur-6jM" secondAttribute="trailing" constant="123" id="bwC-gV-i3z"/>
-                            <constraint firstItem="GbK-Rw-W04" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g2i-e3-2Zg"/>
-                            <constraint firstItem="GbK-Rw-W04" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-135" id="lfN-Vb-CRC"/>
-                            <constraint firstItem="Mwy-CI-ZsR" firstAttribute="top" secondItem="Ojc-H6-y2R" secondAttribute="bottom" constant="69.5" id="nVy-tU-3Xe"/>
-                            <constraint firstItem="GbK-Rw-W04" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-10" id="reV-Fl-1Zl"/>
-                            <constraint firstItem="Mwy-CI-ZsR" firstAttribute="leading" secondItem="wOQ-Ur-6jM" secondAttribute="trailing" constant="16" id="rq3-1H-tkf"/>
+                            <constraint firstItem="wOQ-Ur-6jM" firstAttribute="top" secondItem="Ojc-H6-y2R" secondAttribute="bottom" constant="57" id="0XR-aX-uId"/>
+                            <constraint firstItem="GbK-Rw-W04" firstAttribute="centerX" secondItem="wOQ-Ur-6jM" secondAttribute="centerX" id="2tc-qF-jsc"/>
+                            <constraint firstItem="Ojc-H6-y2R" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9mu-xn-MR2"/>
+                            <constraint firstItem="GbK-Rw-W04" firstAttribute="top" secondItem="wOQ-Ur-6jM" secondAttribute="bottom" constant="57" id="DcX-Ox-b11"/>
+                            <constraint firstItem="Ojc-H6-y2R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="Ky4-Zc-dyR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOQ-Ur-6jM" secondAttribute="trailing" constant="62" id="hFp-bi-6wx"/>
+                            <constraint firstItem="wOQ-Ur-6jM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="sVy-OC-2oH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="wOQ-Ur-6jM" id="zcC-Pv-rx0"/>
-                        <outlet property="textView" destination="GbK-Rw-W04" id="Oek-lt-95W"/>
+                        <outlet property="lyricsView" destination="GbK-Rw-W04" id="Oek-lt-95W"/>
+                        <outlet property="nameField" destination="wOQ-Ur-6jM" id="zcC-Pv-rx0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
